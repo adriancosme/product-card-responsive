@@ -1,0 +1,119 @@
+:root {
+    --background: hsl(30, 38%, 92%);
+    --primary: hsl(158, 36%, 37%);
+
+    --title-color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    font-size: 1.4rem;
+}
+
+.container {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    width: 100%;
+    background-color: var(--white);    
+    max-width: 375px;    
+    flex-grow: 1;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__body {
+    margin: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card__title {
+    color: var(--title-color);
+    font-size: 3.3rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+.card__subtitle {
+    color: var(--text-color);
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.card__description {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    gap: 25px;
+}
+
+.card__price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+.card__price--current {
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-style: italic;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.card__price--original {
+    color: var(--text-color);
+    text-decoration: line-through;
+    font-size: 1.4rem;
+}
+
+
+.card__button {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__button-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card__button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
